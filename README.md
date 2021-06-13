@@ -4,7 +4,7 @@ Recommended for small or medium projects.
 
 ### Example Component
 _Counter.js_
-`` `js
+```js
 import Component from "./prottoDom/Component.js";
 
 const Counter = new Component({
@@ -39,11 +39,11 @@ const Counter = new Component({
 })
 
 export default Counter
-`` `
+```
 
 
 ### Example Router
-`` `js
+```js
 // Import Router.js
 import Router from './prottoDom/Router.js'
 
@@ -55,11 +55,11 @@ Router.load([
 
 // Initialize the Router
 Router.init();
-`` `
+```
 
 
 ### Example DOM
-`` `js
+```js
 import DOM from './prottoDom/DOM.js'
 
 // addEventListener
@@ -67,9 +67,9 @@ DOM.addEventListener('click', ev => {
   ev.preventDefault()
   ...
 }, '.selector')
-`` `
+```
 
-`` `js
+```js
 
 //renderAsNode, return a object HTMLElement
 const $HTMLElement = DOM.renderAsNode(`
@@ -82,7 +82,7 @@ const $HTMLElement = DOM.renderAsNode(`
 `);
 
 document.body.appendChild($HTMLElement)
-`` `
+```
 
 ## Projects that use 'prottoDom'
 
